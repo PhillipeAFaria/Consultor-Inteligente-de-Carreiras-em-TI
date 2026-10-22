@@ -81,26 +81,4 @@ As personas cobrem as dez trilhas, incluindo os quatro grupos mínimos pedidos: 
 
 `experta==1.9.4` depende de `frozendict==1.2`, que referencia `collections.Mapping`, nome removido do módulo `collections` no Python 3.10. Antes de importar Experta, `consultor/motor.py` disponibiliza esse alias a partir de `collections.abc.Mapping`, somente quando ele estiver ausente. Essa adaptação fica no processo da aplicação e não modifica a biblioteca instalada. Não substituímos Experta por um motor próprio. O projeto deve importar Experta por esse módulo para respeitar a ordem de inicialização.
 
-## 7. Preparar o GitHub
 
-Crie um repositório vazio na sua conta. Na pasta do projeto, execute os comandos abaixo, substituindo `URL_DO_SEU_REPOSITORIO` pelo endereço real:
-
-```bash
-git init
-git add .
-git commit -m "Implementa consultor especialista de carreiras em TI"
-git branch -M main
-git remote add origin URL_DO_SEU_REPOSITORIO
-git push -u origin main
-```
-
-Não inclua o ambiente `.venv`, credenciais ou respostas pessoais no repositório. O pacote contém os arquivos para publicação; nenhum repositório remoto foi criado ou publicado automaticamente.
-
-## 8. Referências
-
-- Enunciado fornecido: *Atividade Aula 08(1).pdf*, Inteligência Artificial, UNIPAC Barbacena, data indicada no material: 01/10/2026.
-- [Experta: fatos, regras e execução](https://experta.readthedocs.io/en/latest/thebasics.html).
-- [Experta 1.9.4 no PyPI](https://pypi.org/project/experta/1.9.4/).
-- [Streamlit: testes com AppTest](https://docs.streamlit.io/develop/api-reference/app-testing/st.testing.v1.apptest).
-
-O PDF de origem não é redistribuído neste pacote. As personas são fictícias. Não foram inventados integrantes ou dados de identificação acadêmica.
