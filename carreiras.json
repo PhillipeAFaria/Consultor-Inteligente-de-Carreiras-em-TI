@@ -1,0 +1,112 @@
+{
+  "backend": {
+    "titulo": "Desenvolvimento Back-end",
+    "atividade": "logica",
+    "entrega": "servicos",
+    "ferramentas": [
+      "python",
+      "java"
+    ],
+    "projeto": "Construir uma API com regras de negócio e banco de dados",
+    "estudos": "HTTP, Python ou Java, SQL, APIs e testes de integração"
+  },
+  "frontend": {
+    "titulo": "Desenvolvimento Front-end & UI/UX",
+    "atividade": "visual",
+    "entrega": "interface",
+    "ferramentas": [
+      "javascript",
+      "design"
+    ],
+    "projeto": "Criar uma interface web acessível e testar sua usabilidade",
+    "estudos": "HTML, CSS, JavaScript, acessibilidade e pesquisa com usuários"
+  },
+  "ciencia": {
+    "titulo": "Ciência de Dados e Machine Learning",
+    "atividade": "dados",
+    "entrega": "previsoes",
+    "ferramentas": [
+      "python",
+      "estatistica"
+    ],
+    "projeto": "Investigar dados e construir um modelo preditivo",
+    "estudos": "Python, estatística, pandas, validação de modelos e ética em IA"
+  },
+  "engenharia": {
+    "titulo": "Engenharia de Dados",
+    "atividade": "pipelines",
+    "entrega": "infra_dados",
+    "ferramentas": [
+      "python",
+      "sql"
+    ],
+    "projeto": "Construir um pipeline ETL com dados confiáveis",
+    "estudos": "SQL, Python, modelagem, ETL/ELT e Data Lakes"
+  },
+  "seguranca": {
+    "titulo": "Cibersegurança (Security / Pentesting)",
+    "atividade": "seguranca",
+    "entrega": "protecao",
+    "ferramentas": [
+      "linux",
+      "seguranca"
+    ],
+    "projeto": "Analisar vulnerabilidades em um laboratório autorizado",
+    "estudos": "Redes, Linux, segurança de aplicações e laboratórios autorizados"
+  },
+  "devops": {
+    "titulo": "DevOps & SRE",
+    "atividade": "automacao",
+    "entrega": "operacao",
+    "ferramentas": [
+      "linux",
+      "containers"
+    ],
+    "projeto": "Automatizar deploys e monitorar a confiabilidade de um serviço",
+    "estudos": "Linux, Git, CI/CD, contêineres, observabilidade e SLOs"
+  },
+  "cloud": {
+    "titulo": "Computação em Nuvem (Cloud Architecture)",
+    "atividade": "arquitetura",
+    "entrega": "infraestrutura",
+    "ferramentas": [
+      "cloud",
+      "linux"
+    ],
+    "projeto": "Planejar uma arquitetura em nuvem escalável e seus custos",
+    "estudos": "Redes, IAM, arquitetura AWS/Azure/GCP, custos e infraestrutura como código"
+  },
+  "mobile": {
+    "titulo": "Desenvolvimento Mobile",
+    "atividade": "apps",
+    "entrega": "aplicativo",
+    "ferramentas": [
+      "mobile",
+      "javascript"
+    ],
+    "projeto": "Criar um aplicativo que utilize recursos de um celular",
+    "estudos": "Flutter ou React Native, navegação, APIs e testes em dispositivos"
+  },
+  "qa": {
+    "titulo": "Engenharia de Qualidade e Testes (QA)",
+    "atividade": "testes",
+    "entrega": "qualidade",
+    "ferramentas": [
+      "testes",
+      "python"
+    ],
+    "projeto": "Automatizar testes e investigar falhas de um sistema",
+    "estudos": "Estratégias de teste, Python, pytest, testes de API e automação de interface"
+  },
+  "produto": {
+    "titulo": "Gestão de Produtos (Product Management)",
+    "atividade": "negocio",
+    "entrega": "produto",
+    "ferramentas": [
+      "gestao",
+      "design"
+    ],
+    "projeto": "Priorizar um produto com base em entrevistas e métricas",
+    "estudos": "Discovery, métricas, priorização, comunicação e métodos ágeis"
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "nome": "Bruno — lógica e APIs",
+    "esperado": "backend",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "logica",
+      "ferramenta": "python",
+      "entrega": "servicos",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Clara — interfaces e experiência",
+    "esperado": "frontend",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "visual",
+      "ferramenta": "javascript",
+      "entrega": "interface",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Ana — perfil analítico",
+    "esperado": "ciencia",
+    "respostas": {
+      "matematica": "alta",
+      "atividade": "dados",
+      "ferramenta": "python",
+      "entrega": "previsoes",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Diego — pipelines de dados",
+    "esperado": "engenharia",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "pipelines",
+      "ferramenta": "python",
+      "entrega": "infra_dados",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Eva — infraestrutura e segurança",
+    "esperado": "seguranca",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "seguranca",
+      "ferramenta": "linux",
+      "entrega": "protecao",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Fábio — automação e operação",
+    "esperado": "devops",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "automacao",
+      "ferramenta": "linux",
+      "entrega": "operacao",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Gabriela — arquitetura em nuvem",
+    "esperado": "cloud",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "arquitetura",
+      "ferramenta": "cloud",
+      "entrega": "infraestrutura",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Hugo — aplicativos móveis",
+    "esperado": "mobile",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "apps",
+      "ferramenta": "mobile",
+      "entrega": "aplicativo",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "Iara — qualidade de software",
+    "esperado": "qa",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "testes",
+      "ferramenta": "testes",
+      "entrega": "qualidade",
+      "objetivo": "primeiro"
+    }
+  },
+  {
+    "nome": "João — negócios e produto",
+    "esperado": "produto",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "negocio",
+      "ferramenta": "gestao",
+      "entrega": "produto",
+      "objetivo": "primeiro"
+    }
+  }
+]
