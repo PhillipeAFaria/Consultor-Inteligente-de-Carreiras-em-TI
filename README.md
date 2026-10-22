@@ -25,7 +25,9 @@ python3 -m venv .venv
 Acesse o endereço local informado pelo Streamlit, normalmente `http://localhost:8501`. Para encerrar, pressione Ctrl+C no terminal. Também é possível usar `pip install -r requirements.txt` e `streamlit run app.py` com o ambiente virtual ativado.
 
 Executar pelo terminal do PyCharm
+```bash
 python -m streamlit run app.py
+```
 
 ## 2. Como utilizar
 
