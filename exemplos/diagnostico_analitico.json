@@ -1,0 +1,763 @@
+{
+  "analise": {
+    "versao_base": "2.0",
+    "ranking": [
+      {
+        "id": "ciencia",
+        "nome": "Ciência de Dados e Machine Learning",
+        "compatibilidade": 93.18,
+        "base_percentual": 93.1818,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 93.18,
+        "teto_otimista": 93.18,
+        "evidencias": [
+          {
+            "dimensao": "matematica",
+            "nome": "Matemática e estatística",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 36.3636
+          },
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 36.3636
+          },
+          {
+            "dimensao": "pesquisa",
+            "nome": "Pesquisa e experimentação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 13.6364
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 1,
+            "contribuicao": 6.8182
+          }
+        ],
+        "penalidades": [],
+        "posicao": 1
+      },
+      {
+        "id": "backend",
+        "nome": "Desenvolvimento Back-end",
+        "compatibilidade": 70.0,
+        "base_percentual": 70.0,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 70.0,
+        "teto_otimista": 70.0,
+        "evidencias": [
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 6,
+            "contribuicao": 45.0
+          },
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 2,
+            "contribuicao": 20.0
+          },
+          {
+            "dimensao": "qualidade",
+            "nome": "Qualidade e investigação",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.5
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.5
+          }
+        ],
+        "penalidades": [],
+        "posicao": 2
+      },
+      {
+        "id": "engenharia",
+        "nome": "Engenharia de Dados",
+        "compatibilidade": 64.58,
+        "base_percentual": 64.5833,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 64.58,
+        "teto_otimista": 64.58,
+        "evidencias": [
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 33.3333
+          },
+          {
+            "dimensao": "infraestrutura",
+            "nome": "Infraestrutura e redes",
+            "resposta": 3,
+            "peso": 3,
+            "contribuicao": 12.5
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 3,
+            "contribuicao": 6.25
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 12.5
+          }
+        ],
+        "penalidades": [],
+        "posicao": 3
+      },
+      {
+        "id": "cloud",
+        "nome": "Computação em Nuvem (Cloud Architecture)",
+        "compatibilidade": 38.64,
+        "base_percentual": 38.6364,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 38.64,
+        "teto_otimista": 38.64,
+        "evidencias": [
+          {
+            "dimensao": "infraestrutura",
+            "nome": "Infraestrutura e redes",
+            "resposta": 3,
+            "peso": 6,
+            "contribuicao": 27.2727
+          },
+          {
+            "dimensao": "comunicacao",
+            "nome": "Comunicação e colaboração",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.5455
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.5455
+          },
+          {
+            "dimensao": "seguranca",
+            "nome": "Segurança digital",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.2727
+          }
+        ],
+        "penalidades": [],
+        "posicao": 4
+      },
+      {
+        "id": "seguranca",
+        "nome": "Cibersegurança",
+        "compatibilidade": 32.31,
+        "base_percentual": 42.3077,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 32.31,
+        "teto_otimista": 32.31,
+        "evidencias": [
+          {
+            "dimensao": "seguranca",
+            "nome": "Segurança digital",
+            "resposta": 2,
+            "peso": 7,
+            "contribuicao": 13.4615
+          },
+          {
+            "dimensao": "infraestrutura",
+            "nome": "Infraestrutura e redes",
+            "resposta": 3,
+            "peso": 3,
+            "contribuicao": 11.5385
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 11.5385
+          },
+          {
+            "dimensao": "pesquisa",
+            "nome": "Pesquisa e experimentação",
+            "resposta": 4,
+            "peso": 1,
+            "contribuicao": 5.7692
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_seguranca",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Segurança digital, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "seguranca",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 5
+      },
+      {
+        "id": "frontend",
+        "nome": "Desenvolvimento Front-end & UI/UX",
+        "compatibilidade": 28.64,
+        "base_percentual": 38.6364,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 28.64,
+        "teto_otimista": 28.64,
+        "evidencias": [
+          {
+            "dimensao": "visual",
+            "nome": "Design visual e experiência",
+            "resposta": 2,
+            "peso": 6,
+            "contribuicao": 13.6364
+          },
+          {
+            "dimensao": "comunicacao",
+            "nome": "Comunicação e colaboração",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.5455
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 13.6364
+          },
+          {
+            "dimensao": "pesquisa",
+            "nome": "Pesquisa e experimentação",
+            "resposta": 4,
+            "peso": 1,
+            "contribuicao": 6.8182
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_frontend",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Design visual e experiência, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "visual",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 6
+      },
+      {
+        "id": "devops",
+        "nome": "DevOps & SRE",
+        "compatibilidade": 27.5,
+        "base_percentual": 37.5,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 27.5,
+        "teto_otimista": 27.5,
+        "evidencias": [
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 5,
+            "contribuicao": 10.4167
+          },
+          {
+            "dimensao": "infraestrutura",
+            "nome": "Infraestrutura e redes",
+            "resposta": 3,
+            "peso": 4,
+            "contribuicao": 16.6667
+          },
+          {
+            "dimensao": "qualidade",
+            "nome": "Qualidade e investigação",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.1667
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 1,
+            "contribuicao": 6.25
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_devops",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Automação e operação, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "automacao",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 7
+      },
+      {
+        "id": "produto",
+        "nome": "Gestão de Produtos (Product Management)",
+        "compatibilidade": 25.0,
+        "base_percentual": 35.0,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 25.0,
+        "teto_otimista": 25.0,
+        "evidencias": [
+          {
+            "dimensao": "negocio",
+            "nome": "Negócio e produto",
+            "resposta": 2,
+            "peso": 7,
+            "contribuicao": 11.6667
+          },
+          {
+            "dimensao": "comunicacao",
+            "nome": "Comunicação e colaboração",
+            "resposta": 2,
+            "peso": 4,
+            "contribuicao": 6.6667
+          },
+          {
+            "dimensao": "pesquisa",
+            "nome": "Pesquisa e experimentação",
+            "resposta": 4,
+            "peso": 3,
+            "contribuicao": 15.0
+          },
+          {
+            "dimensao": "visual",
+            "nome": "Design visual e experiência",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 1.6667
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_produto",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Negócio e produto, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "negocio",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 8
+      },
+      {
+        "id": "mobile",
+        "nome": "Desenvolvimento Mobile",
+        "compatibilidade": 23.33,
+        "base_percentual": 33.3333,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 23.33,
+        "teto_otimista": 23.33,
+        "evidencias": [
+          {
+            "dimensao": "mobile",
+            "nome": "Aplicativos móveis",
+            "resposta": 2,
+            "peso": 7,
+            "contribuicao": 14.5833
+          },
+          {
+            "dimensao": "visual",
+            "nome": "Design visual e experiência",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.1667
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 12.5
+          },
+          {
+            "dimensao": "qualidade",
+            "nome": "Qualidade e investigação",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.0833
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_mobile",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Aplicativos móveis, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "mobile",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 9
+      },
+      {
+        "id": "qa",
+        "nome": "Engenharia de Qualidade e Testes (QA)",
+        "compatibilidade": 23.33,
+        "base_percentual": 33.3333,
+        "desconto": 10,
+        "cobertura": 100.0,
+        "piso_cauteloso": 23.33,
+        "teto_otimista": 23.33,
+        "evidencias": [
+          {
+            "dimensao": "qualidade",
+            "nome": "Qualidade e investigação",
+            "resposta": 2,
+            "peso": 7,
+            "contribuicao": 14.5833
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 12.5
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 2,
+            "contribuicao": 4.1667
+          },
+          {
+            "dimensao": "comunicacao",
+            "nome": "Comunicação e colaboração",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.0833
+          }
+        ],
+        "penalidades": [
+          {
+            "id": "P_qa",
+            "pontos": 10,
+            "motivo": "Baixa afinidade declarada em Qualidade e investigação, uma atividade central desta trilha.",
+            "condicoes": [
+              {
+                "dimensao": "qualidade",
+                "operador": "le",
+                "valor": 2,
+                "resposta": 2
+              }
+            ]
+          }
+        ],
+        "posicao": 9
+      }
+    ],
+    "top3": [
+      {
+        "id": "ciencia",
+        "nome": "Ciência de Dados e Machine Learning",
+        "compatibilidade": 93.18,
+        "base_percentual": 93.1818,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 93.18,
+        "teto_otimista": 93.18,
+        "evidencias": [
+          {
+            "dimensao": "matematica",
+            "nome": "Matemática e estatística",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 36.3636
+          },
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 36.3636
+          },
+          {
+            "dimensao": "pesquisa",
+            "nome": "Pesquisa e experimentação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 13.6364
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 1,
+            "contribuicao": 6.8182
+          }
+        ],
+        "penalidades": [],
+        "posicao": 1
+      },
+      {
+        "id": "backend",
+        "nome": "Desenvolvimento Back-end",
+        "compatibilidade": 70.0,
+        "base_percentual": 70.0,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 70.0,
+        "teto_otimista": 70.0,
+        "evidencias": [
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 6,
+            "contribuicao": 45.0
+          },
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 2,
+            "contribuicao": 20.0
+          },
+          {
+            "dimensao": "qualidade",
+            "nome": "Qualidade e investigação",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.5
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 1,
+            "contribuicao": 2.5
+          }
+        ],
+        "penalidades": [],
+        "posicao": 2
+      },
+      {
+        "id": "engenharia",
+        "nome": "Engenharia de Dados",
+        "compatibilidade": 64.58,
+        "base_percentual": 64.5833,
+        "desconto": 0,
+        "cobertura": 100.0,
+        "piso_cauteloso": 64.58,
+        "teto_otimista": 64.58,
+        "evidencias": [
+          {
+            "dimensao": "dados",
+            "nome": "Dados e informação",
+            "resposta": 5,
+            "peso": 4,
+            "contribuicao": 33.3333
+          },
+          {
+            "dimensao": "infraestrutura",
+            "nome": "Infraestrutura e redes",
+            "resposta": 3,
+            "peso": 3,
+            "contribuicao": 12.5
+          },
+          {
+            "dimensao": "automacao",
+            "nome": "Automação e operação",
+            "resposta": 2,
+            "peso": 3,
+            "contribuicao": 6.25
+          },
+          {
+            "dimensao": "logica",
+            "nome": "Lógica e programação",
+            "resposta": 4,
+            "peso": 2,
+            "contribuicao": 12.5
+          }
+        ],
+        "penalidades": [],
+        "posicao": 3
+      }
+    ],
+    "proximas": [
+      "ciencia"
+    ],
+    "status": "comparavel",
+    "empate_no_corte": false
+  },
+  "plano": {
+    "trilha_id": "ciencia",
+    "trilha": "Ciência de Dados e Machine Learning",
+    "referencial": "Júnior (modelo educacional)",
+    "atendimento_referencial": 45.45,
+    "gaps": [
+      {
+        "id": "estatistica",
+        "nome": "Estatística aplicada",
+        "atual": 1,
+        "alvo": 2,
+        "gap": 1,
+        "prioridade": 3,
+        "horas": 16,
+        "evidencia": "Explicar distribuição, amostragem e métricas básicas.",
+        "pre_requisitos": [],
+        "ordem": 1,
+        "semana_inicio": 1,
+        "semana_fim": 3
+      },
+      {
+        "id": "git",
+        "nome": "Git e GitHub",
+        "atual": 1,
+        "alvo": 2,
+        "gap": 1,
+        "prioridade": 3,
+        "horas": 6,
+        "evidencia": "Versionar um projeto com commits claros e README.",
+        "pre_requisitos": [],
+        "ordem": 2,
+        "semana_inicio": 3,
+        "semana_fim": 4
+      },
+      {
+        "id": "python",
+        "nome": "Python",
+        "atual": 2,
+        "alvo": 3,
+        "gap": 1,
+        "prioridade": 3,
+        "horas": 8,
+        "evidencia": "Criar um programa modular com tratamento de erros.",
+        "pre_requisitos": [
+          "programacao"
+        ],
+        "ordem": 3,
+        "semana_inicio": 4,
+        "semana_fim": 5
+      },
+      {
+        "id": "pandas",
+        "nome": "Pandas e análise exploratória",
+        "atual": 0,
+        "alvo": 3,
+        "gap": 3,
+        "prioridade": 3,
+        "horas": 24,
+        "evidencia": "Limpar dados e produzir uma análise reproduzível.",
+        "pre_requisitos": [
+          "python",
+          "estatistica"
+        ],
+        "ordem": 4,
+        "semana_inicio": 6,
+        "semana_fim": 9
+      },
+      {
+        "id": "ml",
+        "nome": "Machine Learning",
+        "atual": 0,
+        "alvo": 2,
+        "gap": 2,
+        "prioridade": 2,
+        "horas": 36,
+        "evidencia": "Separar treino e teste e justificar métricas sem vazamento.",
+        "pre_requisitos": [
+          "pandas"
+        ],
+        "ordem": 5,
+        "semana_inicio": 10,
+        "semana_fim": 15
+      },
+      {
+        "id": "sql",
+        "nome": "SQL e bancos relacionais",
+        "atual": 1,
+        "alvo": 2,
+        "gap": 1,
+        "prioridade": 2,
+        "horas": 12,
+        "evidencia": "Modelar tabelas e escrever consultas com JOIN.",
+        "pre_requisitos": [],
+        "ordem": 6,
+        "semana_inicio": 16,
+        "semana_fim": 17
+      }
+    ],
+    "horas_estimadas": 102,
+    "semanas_estimadas": 17,
+    "horas_semana": 6,
+    "objetivo": "primeiro",
+    "orientacao": "Publique o projeto com README, testes e demonstração para apoiar candidaturas de entrada.",
+    "projeto": {
+      "titulo": "Modelo preditivo com dados abertos",
+      "criterios": [
+        "Análise exploratória e origem dos dados",
+        "Separação treino/teste e comparação com baseline",
+        "Métricas justificadas e limitações do modelo"
+      ]
+    },
+    "certificacoes": [
+      {
+        "nome": "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+        "url": "https://learn.microsoft.com/certifications/azure-data-fundamentals/",
+        "quando": "Opcional para conceitos de dados em nuvem; não certifica domínio de modelagem preditiva."
+      }
+    ]
+  }
+}

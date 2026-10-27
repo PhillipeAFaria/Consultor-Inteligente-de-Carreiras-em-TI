@@ -1,0 +1,1004 @@
+{
+  "versao": "2.0",
+  "escala": {
+    "minimo": 1,
+    "maximo": 5
+  },
+  "config": {
+    "margem_empate": 1.0,
+    "cobertura_minima": 60
+  },
+  "dimensoes": {
+    "logica": {
+      "nome": "Lógica e programação",
+      "descricao": "Escrever algoritmos e resolver problemas.",
+      "etapa": 2
+    },
+    "matematica": {
+      "nome": "Matemática e estatística",
+      "descricao": "Usar cálculos, probabilidades e modelos.",
+      "etapa": 2
+    },
+    "visual": {
+      "nome": "Design visual e experiência",
+      "descricao": "Criar interfaces e compreender usabilidade.",
+      "etapa": 2
+    },
+    "dados": {
+      "nome": "Dados e informação",
+      "descricao": "Organizar, explorar e interpretar dados.",
+      "etapa": 2
+    },
+    "infraestrutura": {
+      "nome": "Infraestrutura e redes",
+      "descricao": "Trabalhar com sistemas, redes e servidores.",
+      "etapa": 2
+    },
+    "seguranca": {
+      "nome": "Segurança digital",
+      "descricao": "Investigar ameaças e proteger sistemas.",
+      "etapa": 2
+    },
+    "automacao": {
+      "nome": "Automação e operação",
+      "descricao": "Automatizar rotinas e acompanhar serviços.",
+      "etapa": 2
+    },
+    "mobile": {
+      "nome": "Aplicativos móveis",
+      "descricao": "Construir experiências para celulares.",
+      "etapa": 2
+    },
+    "qualidade": {
+      "nome": "Qualidade e investigação",
+      "descricao": "Encontrar falhas e verificar comportamentos.",
+      "etapa": 2
+    },
+    "negocio": {
+      "nome": "Negócio e produto",
+      "descricao": "Priorizar soluções que entreguem valor.",
+      "etapa": 1
+    },
+    "comunicacao": {
+      "nome": "Comunicação e colaboração",
+      "descricao": "Conversar com usuários e equipes.",
+      "etapa": 1
+    },
+    "pesquisa": {
+      "nome": "Pesquisa e experimentação",
+      "descricao": "Formular hipóteses e analisar resultados.",
+      "etapa": 1
+    }
+  },
+  "niveis_conhecimento": {
+    "0": "Não conheço",
+    "1": "Reconheço os conceitos",
+    "2": "Faço exercícios com apoio",
+    "3": "Executo tarefas simples com autonomia",
+    "4": "Aplico e explico com segurança"
+  },
+  "objetivos": {
+    "primeiro": "Primeira oportunidade",
+    "transicao": "Transição de carreira",
+    "aprofundar": "Aprofundamento técnico"
+  },
+  "orientacoes_objetivo": {
+    "primeiro": "Publique o projeto com README, testes e demonstração para apoiar candidaturas de entrada.",
+    "transicao": "Relacione o projeto às suas experiências anteriores e documente as competências transferíveis.",
+    "aprofundar": "Amplie o projeto com decisões de arquitetura, métricas e uma revisão técnica documentada."
+  },
+  "competencias": {
+    "git": {
+      "nome": "Git e GitHub",
+      "pre_requisitos": [],
+      "horas": 12,
+      "evidencia": "Versionar um projeto com commits claros e README."
+    },
+    "programacao": {
+      "nome": "Fundamentos de programação",
+      "pre_requisitos": [],
+      "horas": 28,
+      "evidencia": "Resolver problemas com funções e estruturas de dados."
+    },
+    "python": {
+      "nome": "Python",
+      "pre_requisitos": [
+        "programacao"
+      ],
+      "horas": 24,
+      "evidencia": "Criar um programa modular com tratamento de erros."
+    },
+    "sql": {
+      "nome": "SQL e bancos relacionais",
+      "pre_requisitos": [],
+      "horas": 24,
+      "evidencia": "Modelar tabelas e escrever consultas com JOIN."
+    },
+    "http": {
+      "nome": "HTTP e APIs",
+      "pre_requisitos": [],
+      "horas": 16,
+      "evidencia": "Explicar requisições, respostas, métodos e status HTTP."
+    },
+    "api": {
+      "nome": "APIs com Python",
+      "pre_requisitos": [
+        "python",
+        "http",
+        "sql"
+      ],
+      "horas": 32,
+      "evidencia": "Construir uma API com validação, persistência e testes."
+    },
+    "html_css": {
+      "nome": "HTML, CSS e acessibilidade",
+      "pre_requisitos": [],
+      "horas": 28,
+      "evidencia": "Criar uma página responsiva e navegável por teclado."
+    },
+    "javascript": {
+      "nome": "JavaScript",
+      "pre_requisitos": [
+        "programacao"
+      ],
+      "horas": 28,
+      "evidencia": "Manipular dados e eventos sem misturar responsabilidades."
+    },
+    "ux": {
+      "nome": "Pesquisa e prototipação UX",
+      "pre_requisitos": [],
+      "horas": 20,
+      "evidencia": "Documentar entrevistas e testar um protótipo com usuários."
+    },
+    "react": {
+      "nome": "React",
+      "pre_requisitos": [
+        "javascript",
+        "html_css"
+      ],
+      "horas": 28,
+      "evidencia": "Construir componentes e integrar uma API."
+    },
+    "estatistica": {
+      "nome": "Estatística aplicada",
+      "pre_requisitos": [],
+      "horas": 32,
+      "evidencia": "Explicar distribuição, amostragem e métricas básicas."
+    },
+    "pandas": {
+      "nome": "Pandas e análise exploratória",
+      "pre_requisitos": [
+        "python",
+        "estatistica"
+      ],
+      "horas": 24,
+      "evidencia": "Limpar dados e produzir uma análise reproduzível."
+    },
+    "ml": {
+      "nome": "Machine Learning",
+      "pre_requisitos": [
+        "pandas"
+      ],
+      "horas": 36,
+      "evidencia": "Separar treino e teste e justificar métricas sem vazamento."
+    },
+    "etl": {
+      "nome": "ETL/ELT e pipelines",
+      "pre_requisitos": [
+        "python",
+        "sql"
+      ],
+      "horas": 32,
+      "evidencia": "Integrar dados com validação e execução idempotente."
+    },
+    "modelagem": {
+      "nome": "Modelagem de dados",
+      "pre_requisitos": [
+        "sql"
+      ],
+      "horas": 20,
+      "evidencia": "Documentar um modelo analítico e seus contratos."
+    },
+    "linux": {
+      "nome": "Linux",
+      "pre_requisitos": [],
+      "horas": 20,
+      "evidencia": "Gerenciar arquivos, permissões e processos."
+    },
+    "redes": {
+      "nome": "Redes e protocolos",
+      "pre_requisitos": [],
+      "horas": 24,
+      "evidencia": "Explicar TCP/IP, DNS, portas e segmentação."
+    },
+    "seguranca_web": {
+      "nome": "Segurança de aplicações",
+      "pre_requisitos": [
+        "http",
+        "redes"
+      ],
+      "horas": 28,
+      "evidencia": "Identificar e corrigir falhas em laboratório autorizado."
+    },
+    "ameacas": {
+      "nome": "Análise de ameaças",
+      "pre_requisitos": [
+        "seguranca_web"
+      ],
+      "horas": 24,
+      "evidencia": "Documentar riscos, controles e evidências de correção."
+    },
+    "docker": {
+      "nome": "Contêineres Docker",
+      "pre_requisitos": [
+        "linux"
+      ],
+      "horas": 20,
+      "evidencia": "Empacotar um serviço sem incluir segredos na imagem."
+    },
+    "cicd": {
+      "nome": "Integração e entrega contínua",
+      "pre_requisitos": [
+        "git",
+        "docker"
+      ],
+      "horas": 24,
+      "evidencia": "Construir um pipeline que execute testes e gere artefatos."
+    },
+    "observabilidade": {
+      "nome": "Observabilidade e SLOs",
+      "pre_requisitos": [
+        "linux",
+        "http"
+      ],
+      "horas": 24,
+      "evidencia": "Definir indicadores e investigar um incidente simulado."
+    },
+    "cloud": {
+      "nome": "Fundamentos de nuvem",
+      "pre_requisitos": [
+        "redes"
+      ],
+      "horas": 24,
+      "evidencia": "Desenhar uma arquitetura com rede, computação e armazenamento."
+    },
+    "iam": {
+      "nome": "Identidade e acesso",
+      "pre_requisitos": [
+        "cloud"
+      ],
+      "horas": 16,
+      "evidencia": "Aplicar menor privilégio a um serviço de exemplo."
+    },
+    "iac": {
+      "nome": "Infraestrutura como código",
+      "pre_requisitos": [
+        "cloud",
+        "git"
+      ],
+      "horas": 28,
+      "evidencia": "Descrever e revisar infraestrutura sem expor credenciais."
+    },
+    "flutter": {
+      "nome": "Flutter e Dart",
+      "pre_requisitos": [
+        "programacao"
+      ],
+      "horas": 32,
+      "evidencia": "Criar aplicativo com navegação, estado e persistência."
+    },
+    "testes": {
+      "nome": "Fundamentos de testes",
+      "pre_requisitos": [],
+      "horas": 20,
+      "evidencia": "Projetar casos de teste e registrar defeitos reproduzíveis."
+    },
+    "pytest": {
+      "nome": "Automação de testes com pytest",
+      "pre_requisitos": [
+        "python",
+        "testes"
+      ],
+      "horas": 24,
+      "evidencia": "Automatizar casos positivos, negativos e limites."
+    },
+    "teste_ui": {
+      "nome": "Testes de interface",
+      "pre_requisitos": [
+        "testes",
+        "javascript"
+      ],
+      "horas": 24,
+      "evidencia": "Automatizar um fluxo de interface com verificações úteis."
+    },
+    "discovery": {
+      "nome": "Discovery de produto",
+      "pre_requisitos": [],
+      "horas": 24,
+      "evidencia": "Sintetizar entrevistas e formular um problema verificável."
+    },
+    "metricas": {
+      "nome": "Métricas de produto",
+      "pre_requisitos": [],
+      "horas": 20,
+      "evidencia": "Definir uma hipótese, indicador e critério de sucesso."
+    },
+    "priorizacao": {
+      "nome": "Priorização e backlog",
+      "pre_requisitos": [
+        "discovery",
+        "metricas"
+      ],
+      "horas": 20,
+      "evidencia": "Justificar prioridades e critérios de aceite."
+    }
+  },
+  "certificacoes": {
+    "azure": {
+      "nome": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-fundamentals/",
+      "quando": "Opcional para fundamentos de nuvem; priorize o projeto antes de investir no exame."
+    },
+    "dados": {
+      "nome": "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+      "url": "https://learn.microsoft.com/certifications/azure-data-fundamentals/",
+      "quando": "Opcional para conceitos de dados em nuvem; não certifica domínio de modelagem preditiva."
+    },
+    "seguranca": {
+      "nome": "ISC2 Certified in Cybersecurity (CC)",
+      "url": "https://www.isc2.org/certifications/cc",
+      "quando": "Opcional após consolidar redes e fundamentos de segurança."
+    },
+    "qa": {
+      "nome": "ISTQB Certified Tester Foundation Level (CTFL)",
+      "url": "https://istqb.org/certifications/",
+      "quando": "Opcional após praticar técnicas e planejamento de testes."
+    },
+    "produto": {
+      "nome": "Professional Scrum Product Owner I (PSPO I)",
+      "url": "https://www.scrum.org/professional-scrum-certifications",
+      "quando": "Opcional após estudar Scrum e praticar priorização de produto."
+    }
+  },
+  "trilhas": {
+    "backend": {
+      "nome": "Desenvolvimento Back-end",
+      "pesos": {
+        "logica": 6,
+        "dados": 2,
+        "qualidade": 1,
+        "automacao": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "python": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "sql": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "http": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "api": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "testes": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "azure"
+      ],
+      "projeto": {
+        "titulo": "API de gestão de tarefas",
+        "criterios": [
+          "Autenticação e validação das entradas",
+          "Banco relacional e documentação dos endpoints",
+          "Testes de integração e instruções de execução"
+        ]
+      },
+      "nome_curto": "Back-end"
+    },
+    "frontend": {
+      "nome": "Desenvolvimento Front-end & UI/UX",
+      "pesos": {
+        "visual": 6,
+        "comunicacao": 2,
+        "logica": 2,
+        "pesquisa": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "html_css": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "javascript": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "ux": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "react": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "testes": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "azure"
+      ],
+      "projeto": {
+        "titulo": "Painel web acessível para um serviço público",
+        "criterios": [
+          "Layout responsivo e navegação por teclado",
+          "Protótipo e registro de teste de usabilidade",
+          "Consumo de API e testes de componentes"
+        ]
+      },
+      "nome_curto": "Front-end / UX"
+    },
+    "ciencia": {
+      "nome": "Ciência de Dados e Machine Learning",
+      "pesos": {
+        "matematica": 4,
+        "dados": 4,
+        "pesquisa": 2,
+        "logica": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "python": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "estatistica": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "pandas": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "ml": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "sql": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "dados"
+      ],
+      "projeto": {
+        "titulo": "Modelo preditivo com dados abertos",
+        "criterios": [
+          "Análise exploratória e origem dos dados",
+          "Separação treino/teste e comparação com baseline",
+          "Métricas justificadas e limitações do modelo"
+        ]
+      },
+      "nome_curto": "Dados / ML"
+    },
+    "engenharia": {
+      "nome": "Engenharia de Dados",
+      "pesos": {
+        "dados": 4,
+        "infraestrutura": 3,
+        "automacao": 3,
+        "logica": 2
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "python": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "sql": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "etl": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "modelagem": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "docker": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "dados"
+      ],
+      "projeto": {
+        "titulo": "Pipeline de dados abertos",
+        "criterios": [
+          "Ingestão e transformação reproduzíveis",
+          "Validação de esquema e qualidade dos dados",
+          "Reexecução idempotente e documentação do modelo"
+        ]
+      },
+      "nome_curto": "Engenharia de Dados"
+    },
+    "seguranca": {
+      "nome": "Cibersegurança",
+      "pesos": {
+        "seguranca": 7,
+        "infraestrutura": 3,
+        "logica": 2,
+        "pesquisa": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "linux": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "redes": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "http": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "seguranca_web": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "ameacas": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "seguranca"
+      ],
+      "projeto": {
+        "titulo": "Laboratório local de segurança de aplicações",
+        "criterios": [
+          "Escopo autorizado e ambiente isolado",
+          "Relatório com evidências e classificação dos riscos",
+          "Correção demonstrada e teste de regressão"
+        ]
+      },
+      "nome_curto": "Cibersegurança"
+    },
+    "devops": {
+      "nome": "DevOps & SRE",
+      "pesos": {
+        "automacao": 5,
+        "infraestrutura": 4,
+        "qualidade": 2,
+        "logica": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "linux": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "docker": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "cicd": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "observabilidade": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "testes": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "azure"
+      ],
+      "projeto": {
+        "titulo": "Serviço com entrega contínua e monitoramento",
+        "criterios": [
+          "Pipeline com testes e artefato versionado",
+          "Execução em contêiner e política de rollback",
+          "Indicadores, SLO e análise de incidente simulado"
+        ]
+      },
+      "nome_curto": "DevOps / SRE"
+    },
+    "cloud": {
+      "nome": "Computação em Nuvem (Cloud Architecture)",
+      "pesos": {
+        "infraestrutura": 6,
+        "comunicacao": 2,
+        "automacao": 2,
+        "seguranca": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "redes": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "cloud": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "iam": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "iac": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "observabilidade": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "azure"
+      ],
+      "projeto": {
+        "titulo": "Arquitetura de aplicação escalável",
+        "criterios": [
+          "Diagrama e justificativa das decisões",
+          "Rede e IAM com menor privilégio",
+          "Estimativa de custos e plano de recuperação; implantação opcional"
+        ]
+      },
+      "nome_curto": "Cloud"
+    },
+    "mobile": {
+      "nome": "Desenvolvimento Mobile",
+      "pesos": {
+        "mobile": 7,
+        "visual": 2,
+        "logica": 2,
+        "qualidade": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "programacao": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "flutter": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "http": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "ux": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "testes": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "azure"
+      ],
+      "projeto": {
+        "titulo": "Aplicativo de organização de estudos",
+        "criterios": [
+          "Navegação e persistência local",
+          "Integração com API e tratamento de indisponibilidade",
+          "Testes e capturas das telas principais"
+        ]
+      },
+      "nome_curto": "Mobile"
+    },
+    "qa": {
+      "nome": "Engenharia de Qualidade e Testes (QA)",
+      "pesos": {
+        "qualidade": 7,
+        "logica": 2,
+        "automacao": 2,
+        "comunicacao": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "testes": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "python": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "pytest": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "http": {
+          "nivel": 2,
+          "prioridade": 2
+        },
+        "teste_ui": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "qa"
+      ],
+      "projeto": {
+        "titulo": "Suíte de testes de um sistema demonstrativo",
+        "criterios": [
+          "Plano com riscos, casos e critérios de aceite",
+          "Automação de API e de interface",
+          "Relatório de execução e defeitos reproduzíveis"
+        ]
+      },
+      "nome_curto": "QA / Testes"
+    },
+    "produto": {
+      "nome": "Gestão de Produtos (Product Management)",
+      "pesos": {
+        "negocio": 7,
+        "comunicacao": 4,
+        "pesquisa": 3,
+        "visual": 1
+      },
+      "requisitos_junior": {
+        "git": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "discovery": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "metricas": {
+          "nivel": 2,
+          "prioridade": 3
+        },
+        "priorizacao": {
+          "nivel": 3,
+          "prioridade": 3
+        },
+        "ux": {
+          "nivel": 2,
+          "prioridade": 2
+        }
+      },
+      "certificacoes": [
+        "produto"
+      ],
+      "projeto": {
+        "titulo": "Estudo de produto com discovery e backlog",
+        "criterios": [
+          "Problema, público e evidências das entrevistas",
+          "Hipóteses com indicadores e critérios de sucesso",
+          "Backlog priorizado e protótipo validado"
+        ]
+      },
+      "nome_curto": "Produtos"
+    }
+  },
+  "penalidades": [
+    {
+      "id": "P_backend",
+      "trilhas": [
+        "backend"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "logica",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Lógica e programação, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_frontend",
+      "trilhas": [
+        "frontend"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "visual",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Design visual e experiência, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_ciencia",
+      "trilhas": [
+        "ciencia"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "matematica",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Matemática e estatística, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_engenharia",
+      "trilhas": [
+        "engenharia"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "dados",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Dados e informação, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_seguranca",
+      "trilhas": [
+        "seguranca"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "seguranca",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Segurança digital, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_devops",
+      "trilhas": [
+        "devops"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "automacao",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Automação e operação, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_cloud",
+      "trilhas": [
+        "cloud"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "infraestrutura",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Infraestrutura e redes, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_mobile",
+      "trilhas": [
+        "mobile"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "mobile",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Aplicativos móveis, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_qa",
+      "trilhas": [
+        "qa"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "qualidade",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Qualidade e investigação, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_produto",
+      "trilhas": [
+        "produto"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "negocio",
+          "operador": "le",
+          "valor": 2
+        }
+      ],
+      "pontos": 10,
+      "motivo": "Baixa afinidade declarada em Negócio e produto, uma atividade central desta trilha."
+    },
+    {
+      "id": "P_cloud_operacao",
+      "trilhas": [
+        "cloud",
+        "devops"
+      ],
+      "condicoes": [
+        {
+          "dimensao": "infraestrutura",
+          "operador": "le",
+          "valor": 2
+        },
+        {
+          "dimensao": "automacao",
+          "operador": "ge",
+          "valor": 4
+        }
+      ],
+      "pontos": 5,
+      "motivo": "Interesse alto em automação combinado com baixa afinidade por infraestrutura."
+    }
+  ]
+}

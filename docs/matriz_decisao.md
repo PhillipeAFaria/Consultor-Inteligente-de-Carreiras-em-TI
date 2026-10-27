@@ -1,46 +1,44 @@
-# Matriz de decisão
+# Matriz de pesos e regras
 
-Todas as condições de uma linha são conjunções (E). `|` representa OU. As regras R01–R20 cruzam dimensões do perfil. R21–R25 refinam a decisão com a escolha explícita de um projeto. Nenhuma linguagem isolada determina uma carreira.
+Fonte de execução: `base/regras_carreiras.json`. Esta tabela documenta a base entregue; ao alterar o JSON, revise a documentação. Pesos não são percentuais: cada trilha é normalizada pela própria soma.
 
-| Regra | Condições SE | Conclusão ENTÃO | Pontos |
-|---|---|---|---|
-| R01 | atividade=logica; entrega=servicos | Desenvolvimento Back-end | 8 |
-| R02 | atividade=visual; entrega=interface | Desenvolvimento Front-end & UI/UX | 8 |
-| R03 | atividade=dados; entrega=previsoes; matemática=média ou alta | Ciência de Dados e Machine Learning | 8 |
-| R04 | atividade=pipelines ou dados; entrega=infra_dados | Engenharia de Dados | 8 |
-| R05 | atividade=seguranca; entrega=protecao | Cibersegurança (Security / Pentesting) | 8 |
-| R06 | atividade=automacao ou arquitetura; entrega=operacao | DevOps & SRE | 8 |
-| R07 | atividade=arquitetura; entrega=infraestrutura | Computação em Nuvem (Cloud Architecture) | 8 |
-| R08 | atividade=apps ou visual; entrega=aplicativo | Desenvolvimento Mobile | 8 |
-| R09 | atividade=testes ou logica; entrega=qualidade | Engenharia de Qualidade e Testes (QA) | 8 |
-| R10 | atividade=negocio; entrega=produto | Gestão de Produtos (Product Management) | 8 |
-| R11 | atividade=logica; ferramenta=python ou java | Desenvolvimento Back-end | 4 |
-| R12 | atividade=visual; ferramenta=javascript ou design | Desenvolvimento Front-end & UI/UX | 4 |
-| R13 | atividade=dados; ferramenta=python ou estatistica; matemática=média ou alta | Ciência de Dados e Machine Learning | 4 |
-| R14 | atividade=pipelines ou dados; ferramenta=python ou sql | Engenharia de Dados | 4 |
-| R15 | atividade=seguranca; ferramenta=linux ou seguranca | Cibersegurança (Security / Pentesting) | 4 |
-| R16 | atividade=automacao ou arquitetura; ferramenta=linux ou containers | DevOps & SRE | 4 |
-| R17 | atividade=arquitetura; ferramenta=cloud ou linux | Computação em Nuvem (Cloud Architecture) | 4 |
-| R18 | atividade=apps ou visual; ferramenta=mobile ou javascript | Desenvolvimento Mobile | 4 |
-| R19 | atividade=testes ou logica; ferramenta=testes ou python | Engenharia de Qualidade e Testes (QA) | 4 |
-| R20 | atividade=negocio; ferramenta=gestao ou design | Gestão de Produtos (Product Management) | 4 |
-| R21 | projeto escolhido=ciencia ou engenharia | Trilha correspondente ao projeto escolhido | 20 |
-| R22 | projeto escolhido=devops ou cloud | Trilha correspondente ao projeto escolhido | 20 |
-| R23 | projeto escolhido=frontend ou mobile | Trilha correspondente ao projeto escolhido | 20 |
-| R24 | projeto escolhido=backend ou qa | Trilha correspondente ao projeto escolhido | 20 |
-| R25 | projeto escolhido=seguranca ou produto | Trilha correspondente ao projeto escolhido | 20 |
+| Trilha | Dimensões e pesos | Soma |
+|---|---|---:|
+| Desenvolvimento Back-end | Lógica e programação = 6; Dados e informação = 2; Qualidade e investigação = 1; Automação e operação = 1 | 10 |
+| Desenvolvimento Front-end & UI/UX | Design visual e experiência = 6; Comunicação e colaboração = 2; Lógica e programação = 2; Pesquisa e experimentação = 1 | 11 |
+| Ciência de Dados e Machine Learning | Matemática e estatística = 4; Dados e informação = 4; Pesquisa e experimentação = 2; Lógica e programação = 1 | 11 |
+| Engenharia de Dados | Dados e informação = 4; Infraestrutura e redes = 3; Automação e operação = 3; Lógica e programação = 2 | 12 |
+| Cibersegurança | Segurança digital = 7; Infraestrutura e redes = 3; Lógica e programação = 2; Pesquisa e experimentação = 1 | 13 |
+| DevOps & SRE | Automação e operação = 5; Infraestrutura e redes = 4; Qualidade e investigação = 2; Lógica e programação = 1 | 12 |
+| Computação em Nuvem (Cloud Architecture) | Infraestrutura e redes = 6; Comunicação e colaboração = 2; Automação e operação = 2; Segurança digital = 1 | 11 |
+| Desenvolvimento Mobile | Aplicativos móveis = 7; Design visual e experiência = 2; Lógica e programação = 2; Qualidade e investigação = 1 | 12 |
+| Engenharia de Qualidade e Testes (QA) | Qualidade e investigação = 7; Lógica e programação = 2; Automação e operação = 2; Comunicação e colaboração = 1 | 12 |
+| Gestão de Produtos (Product Management) | Negócio e produto = 7; Comunicação e colaboração = 4; Pesquisa e experimentação = 3; Design visual e experiência = 1 | 15 |
 
-## Resolução de conflitos
+## Penalidades declarativas
 
-1. Cada regra dispara no máximo uma vez por consulta, com um único Perfil e, opcionalmente, um Projeto.
-2. O serviço soma os fatos Evidencia por trilha após `run()`. A ordem da agenda não decide o vencedor.
-3. Recomenda diretamente se o líder tem pelo menos 8 pontos e uma vantagem superior a 4 pontos.
-4. Caso contrário, pergunta qual projeto o usuário prefere entre as trilhas a até 4 pontos do líder; sem evidências, apresenta as dez.
-5. A resposta gera um fato Projeto e uma nova execução do motor. Seus 20 pontos superam o máximo inicial de 12, resolvendo o empate por uma preferência informada.
-6. Sem resposta de refinamento, o resultado fica pendente; não há desempate alfabético ou indicação aleatória.
+Todas as condições de uma regra são ligadas por E. Desconhecido não satisfaz nenhuma condição.
 
-## Interpretação e limites
+| Regra | Condições | Trilhas | Desconto (p.p.) |
+|---|---|---|---:|
+| P_backend | Lógica e programação ≤ 2 | backend | 10 |
+| P_frontend | Design visual e experiência ≤ 2 | frontend | 10 |
+| P_ciencia | Matemática e estatística ≤ 2 | ciencia | 10 |
+| P_engenharia | Dados e informação ≤ 2 | engenharia | 10 |
+| P_seguranca | Segurança digital ≤ 2 | seguranca | 10 |
+| P_devops | Automação e operação ≤ 2 | devops | 10 |
+| P_cloud | Infraestrutura e redes ≤ 2 | cloud | 10 |
+| P_mobile | Aplicativos móveis ≤ 2 | mobile | 10 |
+| P_qa | Qualidade e investigação ≤ 2 | qa | 10 |
+| P_produto | Negócio e produto ≤ 2 | produto | 10 |
+| P_cloud_operacao | Infraestrutura e redes ≤ 2 E Automação e operação ≥ 4 | cloud, devops | 5 |
 
-Os pesos são heurísticos definidos para este trabalho; não foram calibrados com dados de profissionais. Pontos não são probabilidades, aptidão medida nem garantia de emprego. Matemática baixa não é exclusão profissional: para Ciência de Dados, um projeto escolhido pode indicar interesse, acompanhado de uma orientação de estudos. O objetivo profissional adapta o plano inicial; não é uma condição de exclusão de carreiras. Ferramentas são evidências secundárias e iniciantes podem receber indicação pelas preferências de atividade e entrega.
+## Exemplo auditável
 
-Ciência de Dados prioriza previsões e estatística; Engenharia de Dados prioriza pipelines e infraestrutura. DevOps prioriza entrega contínua e confiabilidade operacional; Cloud prioriza planejamento de arquitetura. Front-end se diferencia de Mobile pelo contexto web versus dispositivos. Back-end se diferencia de QA pela entrega de serviços versus verificação de qualidade. Segurança e Produto possuem atividades e entregas específicas. O agrupamento R25 apenas reúne duas escolhas remanescentes, sem afirmar proximidade conceitual entre elas.
+Back-end: lógica = 5; dados, qualidade e automação = 3. Após normalização, as contribuições ponderadas são 6 × 1 + 2 × 0,5 + 1 × 0,5 + 1 × 0,5 = 8. Dividindo por 10 e multiplicando por 100, a base é 80%. A penalidade de lógica baixa não dispara, logo a aderência final é 80%.
+
+Com todas as afinidades em 3, todas as trilhas atingem 50%. Essa é uma resposta neutra e empatada, não uma preferência descoberta pelo sistema.
+
+## Conhecimento e referencial Júnior
+
+Escala: 0 = não conheço; 1 = reconheço conceitos; 2 = exercícios com apoio; 3 = tarefas simples com autonomia; 4 = aplicação consolidada. Cada trilha define níveis-alvo e prioridades no JSON. Os pré-requisitos ausentes do referencial direto são acrescentados com nível-alvo 2 e prioridade 3. Esses dois padrões são parâmetros estruturais do algoritmo, não pesos de compatibilidade.

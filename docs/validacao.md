@@ -1,58 +1,37 @@
-# Relatório de validação
+# Validação da entrega — Etapa 2
 
-Validação executada em 22/10/2026.
+Data: **27/10/2026**.
 
-## Ambiente efetivamente testado
+## 1. Ambiente
 
-- Windows, Python 3.12.14.
-- Experta 1.9.4, frozendict 1.2, schema 0.6.7.
-- Streamlit 1.66.1, pytest 9.1.1.
-- Ambiente virtual isolado; nenhuma alteração no Python global do usuário.
+Windows, Python 3.12.14, Streamlit 1.66.1, Pandas 3.1.0 e pytest 9.1.1. Os testes utilizaram um ambiente virtual de trabalho separado dos arquivos da entrega. Não foram executados testes em Python 3.10 ou 3.11.
 
-O projeto declara Python 3.10 ou superior, mas somente Python 3.12.14 foi executado neste trabalho. O alias `collections.Mapping` permitiu executar o Experta com sua dependência original, sem alterar arquivos instalados.
+## 2. Resultados observados
 
-## Resultados
-
-| Verificação | Resultado observado |
+| Verificação | Resultado |
 |---|---|
-| `python validar_personas.py` | 10/10 personas aprovadas |
-| `python -m pytest -q` | 35 testes aprovados em 4,74 segundos |
-| Quantidade de regras no motor | 25 regras Experta |
-| `pip check` no ambiente de teste | Nenhum requisito incompatível |
+| `python -m pytest -q` | 71 testes aprovados |
+| `python validar_personas.py` | Dez de dez personas com a primeira trilha esperada, sem empate no topo |
+| Interface simulada | Wizard, voltar, manter respostas, editar, reiniciar e selecionar plano aprovados com AppTest |
+| Navegador local | Fluxo de negócios/produto percorrido; ranking, gráfico e roadmap exibidos |
 
-Os 35 testes incluem 32 verificações do motor e 3 fluxos da interface Streamlit. As dez personas são fictícias e foram elaboradas junto da matriz: os resultados demonstram consistência com a base definida, sem constituir uma avaliação externa da precisão vocacional.
+Os dez perfis ideais em `dados/personas.json` geram 100% para sua trilha correspondente. Isso é esperado pela construção das fixtures e pela normalização, não uma taxa de acerto em usuários reais. Casos mistos, desconhecidos e conflitantes são testados separadamente na suíte.
 
-## Personas
+## 3. Cobertura funcional
 
-| Persona | Perfil | Trilha esperada e obtida |
-|---|---|---|
-| Bruno | Lógica, serviços e Python | Back-end |
-| Clara | Visual, interface e JavaScript | Front-end & UI/UX |
-| Ana | Análise de dados, matemática alta e Python | Ciência de Dados e Machine Learning |
-| Diego | Pipelines, infraestrutura de dados e Python | Engenharia de Dados |
-| Eva | Segurança, proteção e Linux | Cibersegurança |
-| Fábio | Automação, disponibilidade e Linux | DevOps & SRE |
-| Gabriela | Arquitetura, infraestrutura e nuvem | Cloud Architecture |
-| Hugo | Aplicativos, dispositivos móveis e ferramentas mobile | Desenvolvimento Mobile |
-| Iara | Investigação de falhas, qualidade e ferramentas de testes | QA |
-| João | Negócio, produto e gestão | Product Management |
+- Cálculo manual de 80% para Back-end em um perfil de referência.
+- Empate neutro de 50% entre as dez trilhas e empate no corte do Top 3.
+- Extremos 1 e 5, ausência total de informação e perfis mistos de dados/web, infraestrutura/automação e lógica/qualidade.
+- Penalidades simples e cruzadas, com registro das condições observadas.
+- Limites cauteloso/otimista verificados contra todos os 25 preenchimentos de duas respostas desconhecidas.
+- Rejeição de números fora da escala, booleanos, NaN, infinito, campos ausentes e extras.
+- Rejeição de peso negativo, soma zero, referência inexistente, ciclo de pré-requisitos, regra duplicada, operador desconhecido e JSON inválido.
+- Mudança de peso no JSON altera o resultado sem modificar o motor.
+- Roadmap das dez trilhas com dependências válidas, redução de gaps pelo conhecimento, adaptação às horas semanais e ausência de estudo desnecessário quando o referencial é atendido.
+- Exportação de ranking, auditoria, plano e certificação; inicialização com o interpretador configurado.
 
-Os detalhes das cinco respostas de cada persona estão em `personas.json`.
+## 4. Limites
 
-## Casos adicionais
+Não houve validação com especialistas ou usuários externos, teste de carga, deploy público ou publicação automática no GitHub. A inspeção em navegador cobriu um cenário de teste; os demais fluxos foram exercitados por testes automatizados. As chamadas do iniciador e a delegação direta de `app.py` foram verificadas com substituição controlada de subprocessos.
 
-- Perfil iniciante com preferências claras recebe recomendação sem precisar conhecer uma linguagem.
-- Perfil exploratório, sem evidências suficientes, permanece pendente e apresenta a pergunta de projeto.
-- Perfil de dados com Python e entrega indefinida ativa evidências de Ciência e Engenharia de Dados; a escolha adicional resolve o empate.
-- As cinco regras de refinamento foram exercitadas para as dez trilhas.
-- Matemática baixa não ativa as regras iniciais de Ciência de Dados; a escolha explícita de um projeto dessa área produz recomendação e orientação de reforço em fundamentos.
-- Objetivos de primeira oportunidade, transição e especialização adaptam o plano inicial.
-- Consultas independentes não compartilham evidências.
-- Entradas ausentes, desconhecidas ou fora do vocabulário são rejeitadas.
-- AppTest confirmou o bloqueio do botão com respostas incompletas, indicação de Back-end, reinício da entrevista, refinamento para Produto e invalidação de uma escolha antiga após mudança nas respostas.
-
-## Limites da verificação
-
-Os testes da interface foram executados pelo `streamlit.testing.v1.AppTest`, sem inspeção visual em navegador. O sandbox bloqueava sockets locais usados pelo asyncio; os testes passaram ao serem executados com essa restrição removida. Isso não exigiu alteração na lógica da aplicação.
-
-Não foram realizados deploy público, teste de carga, publicação no GitHub ou validação com profissionais externos. A documentação contém os comandos para instalação, execução e publicação do repositório.
+A captura `capturas/compatibilidade.png` registra a inspeção do ranking no navegador. No cenário observado, Produto obteve 93,33%, Front-end/UX 17,27% e Ciência de Dados 8,18%, com empate de Cloud no terceiro lugar devidamente informado.

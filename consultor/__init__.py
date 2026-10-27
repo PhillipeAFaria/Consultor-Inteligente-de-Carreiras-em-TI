@@ -1,1 +1,1 @@
-"""Consultor de carreiras baseado em regras Experta."""
+"""Motor ponderado e planejamento de competências da Etapa 2."""
