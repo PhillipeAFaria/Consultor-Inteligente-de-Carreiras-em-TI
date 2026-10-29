@@ -124,6 +124,6 @@ Esta entrega foi preparada localmente; nenhuma publicação remota foi feita aut
 
 ## 8. Captura de execução
 
-Exemplo de perfil de teste com interesse em negócios, comunicação e pesquisa:
+Exemplo de perfil de teste:
 
 ![Ranking de compatibilidade](docs/capturas/compatibilidade.png)
