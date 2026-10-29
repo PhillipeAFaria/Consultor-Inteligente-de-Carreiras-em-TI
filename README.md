@@ -4,6 +4,14 @@ Trabalho de **Inteligência Artificial**, Ciência da Computação — UNIPAC Ba
 
 Sistema especialista com **motor próprio de soma ponderada**, conhecimento externo em JSON e interface Streamlit em etapas. Analisa afinidades graduais, apresenta as dez trilhas e o Top 3, identifica lacunas para um referencial Júnior e gera um plano de estudos e portfólio.
 
+## Iniciar com dois cliques no Windows
+
+Extraia todos os arquivos do ZIP e dê dois cliques em **`Iniciar.bat`**. Não é necessário abrir o PyCharm ou digitar comandos. Na primeira execução, o iniciador cria `.venv` e instala as dependências; nas seguintes, reutiliza esse ambiente.
+
+**É necessário ter Python 3.10 ou superior instalado (recomendado: 3.12).** O arquivo BAT automatiza a execução, mas não substitui o Python. A primeira instalação das dependências requer internet. Se Python não for encontrado, a janela exibirá as instruções para instalá-lo.
+
+Mantenha a janela aberta enquanto usa a aplicação. Para encerrar, pressione Ctrl+C. Se houver erro, a janela permanece aberta para mostrar a mensagem. `Iniciar.bat --verificar` confere o ambiente sem instalar pacotes nem iniciar o servidor.
+
 ## 1. Instalar e executar
 
 **Python 3.12 recomendado**, por ser o ambiente validado. O código utiliza Python 3.10 ou superior; o pip seleciona as dependências compatíveis com o interpretador dentro dos intervalos declarados. Não foram executados testes nas demais versões.
@@ -42,6 +50,7 @@ Você pode voltar às etapas para revisar respostas. Editar invalida o resultado
 ```text
 Entrega_Etapa_2_Carreiras_TI/
 ├── README.md
+├── Iniciar.bat                   Início com dois cliques no Windows
 ├── iniciar.py                    Início pelo PyCharm/terminal
 ├── app.py                        Wizard Streamlit e gráficos
 ├── requirements.txt              Dependências de execução
